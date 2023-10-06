@@ -1,0 +1,27 @@
+### API 1 CREATE A NEW REGISTER IN THE DATABASE
+POST  http://localhost:3000/api/signup/
+Content-Type: application/json
+
+{
+    "id" : 1,
+  "name": "Adam Richard",
+  "email" : "sanjukumar56429@gmail.com"
+}
+
+### API 2 CREATE USER POSTS
+
+POST  http://localhost:3000/api/posts/
+Content-Type: application/json
+
+{
+  "content": "I AM DEV",
+  "userid": 1
+}
+
+### API 3 DELETE USER POSTS BASED ON POST ID
+DELETE   http://localhost:3000/api/deletepost/:postId/
+
+### // API 4 FETCH USER ALL POST BASED ON USER ID
+GET  http://localhost:3000/API/posts/:userId/
+
+exports.app = app
